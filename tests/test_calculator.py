@@ -12,10 +12,9 @@ def test_addition(driver):
     result = calc.get_result()
     print(f"Calculator result: {result}")
     assert result == "12"
-
+print("Running addition test")
 def test_subtraction(driver):
     calc = CalculatorPage(driver)
-
     calc.click_7()
     calc.click_minus()
     calc.click_5()
